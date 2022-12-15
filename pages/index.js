@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Header from "../components/shared/Header";
 
 export default function Home() {
   return (
@@ -13,9 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1 className="text-3xl font-bold">
-          Credere, your mortgage with social impact
-        </h1>
+        <Header />
       </main>
     </>
   );
