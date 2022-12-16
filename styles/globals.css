@@ -52,6 +52,11 @@ body {
   color: rbg(--foreground-rgb);
 }
 
+p {
+  line-height: 1.5;
+  padding-bottom: 0.7rem;
+}
+
 a {
   color: inherit;
   text-decoration: none;

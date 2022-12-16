@@ -2,6 +2,9 @@ import { useState } from "react";
 import { BiMenu } from "react-icons/bi";
 import { MdClose } from "react-icons/md";
 import { Dialog } from "@headlessui/react";
+import { Inter } from "@next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
 
 const navigation = [
   { name: "#️⃣ NIF", href: "#" },
@@ -17,13 +20,9 @@ const Header = () => {
         aria-label="Global"
       >
         <div aria-label="Global">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="#">
             <span className="sr-only">Your Company</span>
-            <img
-              className="h-10"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-              alt="Credere"
-            />
+            <h1 className="text-5xl text-pink-700 font-bold">Cr</h1>
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -44,22 +43,21 @@ const Header = () => {
           ))}
         </div>
       </nav>
-      <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+      <Dialog
+        as="div"
+        open={mobileMenuOpen}
+        onClose={setMobileMenuOpen}
+        className={inter.className}
+      >
         <Dialog.Panel
           focus="true"
           className="fixed inset-0 z-10 overflow-y-auto bg-white px-8 py-8 lg:hidden"
         >
           <div className="flex h-9 items-center justify-between">
-            <div className="flex">
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
-                <img
-                  className="h-10"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                  alt=""
-                />
-              </a>
-            </div>
+            <a href="#">
+              <span className="sr-only">Your Company</span>
+              <h1 className="text-5xl text-pink-700 font-bold">Cr</h1>
+            </a>
             <button type="button" onClick={() => setMobileMenuOpen(false)}>
               <span className="sr-only">Close menu</span>
               <MdClose className="h-10 w-10" aria-hidden="true" />

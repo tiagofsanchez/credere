@@ -1,5 +1,6 @@
 import Head from "next/head";
 import HomePageHero from "../components/pages/HomePageHero";
+import HomePageHow from "../components/pages/HomePageHow";
 import Header from "../components/shared/Header";
 
 export default function Home() {
@@ -16,7 +17,10 @@ export default function Home() {
       </Head>
       <main>
         <Header /> {/* This will be in a Layout */}
-        <HomePageHero />
+        <div className="grid gap-28">
+          <HomePageHero />
+          <HomePageHow />
+        </div>
       </main>
     </>
   );

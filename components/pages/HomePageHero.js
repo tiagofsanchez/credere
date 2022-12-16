@@ -4,12 +4,11 @@ import BlurredTop from "../styles/BlurredTop";
 
 const HomePageHero = () => {
   return (
-    <main>
+    <section>
       <BlurredTop />
       <div className="relative px-8 lg:px-8">
-        <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-40 sm:pb-40">
+        <div className="mx-auto max-w-3xl pt-40 pb-32 sm:pb-40">
           <div>
-            <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
             <div>
               <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
                 Credere, the only way to get your 📑 mortgage.
@@ -21,13 +20,14 @@ const HomePageHero = () => {
               </p>
               <div className="mt-8 flex gap-x-4 sm:justify-center">
                 <Button description="Waiting list" primary={true} />
+                <Button description="Current Services" />
               </div>
             </div>
             <BlurredBottom />
           </div>
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 
