@@ -14,7 +14,7 @@ const navigation = [
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <div className="px-8 pt-8 ">
+    <div className="px-8 pt-8 max-w-6xl mx-auto">
       <nav
         className="flex h-9 items-center justify-between"
         aria-label="Global"
