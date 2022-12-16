@@ -1,4 +1,5 @@
 import Head from "next/head";
+import HomePageHero from "../components/pages/HomePageHero";
 import Header from "../components/shared/Header";
 
 export default function Home() {
@@ -14,7 +15,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Header />
+        <Header /> {/* This will be in a Layout */}
+        <HomePageHero />
       </main>
     </>
   );

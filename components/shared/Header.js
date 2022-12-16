@@ -4,14 +4,14 @@ import { MdClose } from "react-icons/md";
 import { Dialog } from "@headlessui/react";
 
 const navigation = [
-  { name: "nif", href: "#" },
-  { name: "bank account", href: "#" },
+  { name: "#️⃣ NIF", href: "#" },
+  { name: "🏦 Bank Account", href: "#" },
 ];
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <div className="px-10 pt-8 ">
+    <div className="px-8 pt-8 ">
       <nav
         className="flex h-9 items-center justify-between"
         aria-label="Global"
@@ -47,7 +47,7 @@ const Header = () => {
       <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <Dialog.Panel
           focus="true"
-          className="fixed inset-0 z-10 overflow-y-auto bg-white px-10 py-8 lg:hidden"
+          className="fixed inset-0 z-10 overflow-y-auto bg-white px-8 py-8 lg:hidden"
         >
           <div className="flex h-9 items-center justify-between">
             <div className="flex">
@@ -60,16 +60,10 @@ const Header = () => {
                 />
               </a>
             </div>
-            <div className="flex">
-              <button
-                type="button"
-                className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                <span className="sr-only">Close menu</span>
-                <MdClose className="h-10 w-10" aria-hidden="true" />
-              </button>
-            </div>
+            <button type="button" onClick={() => setMobileMenuOpen(false)}>
+              <span className="sr-only">Close menu</span>
+              <MdClose className="h-10 w-10" aria-hidden="true" />
+            </button>
           </div>
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
