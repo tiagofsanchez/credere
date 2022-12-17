@@ -2,6 +2,7 @@ import Head from "next/head";
 import HomePageFaq from "../components/pages/HomePageFaq";
 import HomePageHero from "../components/pages/HomePageHero";
 import HomePageHow from "../components/pages/HomePageHow";
+import Footer from "../components/shared/Footer";
 import Header from "../components/shared/Header";
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
           <HomePageHero />
           <HomePageHow />
           <HomePageFaq />
+          <Footer />
         </div>
       </main>
     </>

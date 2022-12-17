@@ -3,6 +3,14 @@ import Step from "../shared/Step";
 const HomePageHow = () => {
   return (
     <section className="mx-auto max-w-6xl px-8">
+      <div className="mx-auto text-center grid gap-4 mb-8">
+        <span className="uppercase text-pink-700 text-sm font-bold ">
+          How it works?
+        </span>
+        <h2 className="text-3xl text-center font-bold">
+          Our simple process to help you out
+        </h2>
+      </div>
       <div className=" grid md:grid-cols-3 gap-10 grid-cols-1">
         <div>
           <Step>1</Step>

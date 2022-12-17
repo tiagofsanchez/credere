@@ -3,7 +3,7 @@ import { ChevronUpIcon } from "@heroicons/react/20/solid";
 
 const HomePageFaq = () => {
   return (
-    <div className="w-full px-4 pt-16 max-w-6xl mx-auto">
+    <div className="w-full px-8 max-w-6xl mx-auto">
       <div className="mx-auto text-center grid gap-4 mb-8">
         <span className="uppercase text-pink-700 text-sm font-bold ">
           Have any questions?
