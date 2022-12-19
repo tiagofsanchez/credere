@@ -14,9 +14,9 @@ const HomePageHero = () => {
                 Credere, the only way to get your 📑 mortgage.
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
-                We are building the best experience in the market to help you
-                with everything about your mortgage. Credere, the mortgage with
-                social impact!
+                We are building the best and totally free experience in the
+                market to help you with everything about your mortgage. Credere,
+                the mortgage with social impact!
               </p>
               <div className="mt-8 flex gap-x-4 sm:justify-center">
                 <Button description="Waiting list" primary={true} />
