@@ -11,7 +11,7 @@ const HomePageHero = () => {
     <section>
       <BlurredTop />
       <div className="relative px-8 lg:px-8">
-        <div className="mx-auto max-w-3xl pt-40 pb-32 sm:pb-40">
+        <div className="mx-auto max-w-3xl pt-40 pb-52">
           <div>
             <div>
               <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
@@ -40,8 +40,11 @@ const HomePageHero = () => {
               <div className="fixed inset-0 flex items-center justify-center p-4">
                 <Dialog.Panel
                   focus="true"
-                  className="w-full max-w-sm rounded bg-white p-8"
+                  className="w-full max-w-sm rounded bg-white p-8 grid gap-10"
                 >
+                  <h1 className="text-4xl text-center font-semibold">
+                    Join the waiting list
+                  </h1>
                   <Form />
                 </Dialog.Panel>
               </div>

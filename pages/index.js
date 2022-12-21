@@ -19,8 +19,8 @@ export default function Home() {
       </Head>
       <main>
         <Header /> {/* This will be in a Layout */}
-        <div className="grid gap-28">
-          <HomePageHero />
+        <HomePageHero />
+        <div className="grid gap-48">
           <HomePageHow />
           <HomePageFaq />
           <Footer />
