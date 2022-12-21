@@ -43,7 +43,7 @@ const HomePageHow = () => {
             You will select a charity that will put 5% of our top line to a good
             use.
           </p>
-          <p>Your mortgage will have a social impact.</p>
+          <p>Your mortgage will have a social impact with no costs to you.</p>
         </div>
       </div>
     </section>

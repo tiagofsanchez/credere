@@ -1,8 +1,12 @@
 import Button from "../shared/Button";
 import BlurredBottom from "../styles/BlurredBottom";
 import BlurredTop from "../styles/BlurredTop";
+import { Dialog } from "@headlessui/react";
+import { useState } from "react";
+import Form from "../shared/Form";
 
 const HomePageHero = () => {
+  const [popupForm, setPopupForm] = useState(false);
   return (
     <section>
       <BlurredTop />
@@ -19,10 +23,29 @@ const HomePageHero = () => {
                 the mortgage with social impact!
               </p>
               <div className="mt-8 flex gap-x-4 sm:justify-center">
-                <Button description="Waiting list" primary={true} />
+                <Button
+                  description="Waiting list"
+                  primary={true}
+                  setPopupForm={setPopupForm}
+                />
                 <Button description="Current Services" />
               </div>
             </div>
+            <Dialog
+              as="div"
+              open={popupForm}
+              onClose={() => setPopupForm(false)}
+            >
+              <div className="fixed inset-0 bg-black/80" aria-hidden="true" />
+              <div className="fixed inset-0 flex items-center justify-center p-4">
+                <Dialog.Panel
+                  focus="true"
+                  className="w-full max-w-sm rounded bg-white p-8"
+                >
+                  <Form />
+                </Dialog.Panel>
+              </div>
+            </Dialog>
             <BlurredBottom />
           </div>
         </div>

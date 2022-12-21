@@ -94,9 +94,7 @@ const HomePageFaq = () => {
           {({ open }) => (
             <>
               <Disclosure.Button className="flex w-full justify-between rounded-lg bg-purple-100 px-4 py-2 text-left text-sm font-medium text-purple-900 hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
-                <span className="text-xl sm:text-2xl">
-                  What is a NIF?
-                </span>
+                <span className="text-xl sm:text-2xl">What is a NIF?</span>
                 <ChevronUpIcon
                   className={`${
                     open ? "rotate-180 transform" : ""
@@ -109,7 +107,6 @@ const HomePageFaq = () => {
             </>
           )}
         </Disclosure>
-      </div>
         <Disclosure as="div" className="mt-2">
           {({ open }) => (
             <>
