@@ -11,7 +11,7 @@ const HomePageHow = () => {
           Our simple process to help you out
         </h2>
       </div>
-      <div className=" grid md:grid-cols-3 gap-10 grid-cols-1">
+      <div className="grid md:grid-cols-3 gap-10 grid-cols-1">
         <div>
           <Step>1</Step>
           <h2 className="text-xl sm:text-2xl font-bold mb-5 mt-5">

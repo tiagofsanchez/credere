@@ -9,7 +9,7 @@ const Form = () => {
             name="name"
             id="name"
             autoComplete="given-name"
-            class="form-input rounded mt-2 "
+            class="form-input rounded mt-1"
             placeholder=""
           />
         </label>
@@ -20,7 +20,7 @@ const Form = () => {
             name="email"
             id="email"
             autoComplete="email"
-            class="form-input rounded mt-2"
+            class="form-input rounded mt-1"
             placeholder=""
           />
         </label>
