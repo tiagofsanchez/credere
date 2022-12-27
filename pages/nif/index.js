@@ -7,8 +7,8 @@ import Layout from "../../components/shared/Layout";
 const NifPage = () => {
   return (
     <Layout>
+      <NifPageHero />
       <div className="grid gap-52">
-        <NifPageHero />
         <NifPageHow />
         <NifPageRequirements />
         <NifPageFaq />

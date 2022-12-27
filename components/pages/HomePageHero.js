@@ -4,17 +4,18 @@ import BlurredTop from "../styles/BlurredTop";
 import { Dialog } from "@headlessui/react";
 import { useState } from "react";
 import Form from "../shared/Form";
+import Tag from "../shared/Tag";
 
 const HomePageHero = () => {
   const [popupForm, setPopupForm] = useState(false);
   return (
     <section>
       <BlurredTop />
-      <div className="relative px-8 lg:px-8">
+      <div className="relative px-8">
         <div className="mx-auto max-w-3xl pt-40 pb-52">
           <div>
             <div>
-              <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
+              <h1 className="text-4xl font-bold tracking-wide sm:text-center sm:text-6xl">
                 Credere, the only way to get your 📑 mortgage.
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
@@ -38,14 +39,14 @@ const HomePageHero = () => {
             >
               <div className="fixed inset-0 bg-black/80" aria-hidden="true" />
               <div className="fixed inset-0 flex items-center justify-center p-4">
-                <Dialog.Panel
-                  focus="true"
-                  className="w-full max-w-sm rounded bg-white p-8 grid gap-10"
-                >
-                  <h1 className="text-4xl text-center font-semibold">
-                    Join the waiting list
-                  </h1>
-                  <Form />
+                <Dialog.Panel focus="true" className="rounded bg-white p-8">
+                  {/* <Tag description="Totally FREE!!!" /> */}
+                  <div className="w-full max-w-sm grid gap-10">
+                    <h1 className="text-4xl text-center font-semibold">
+                      Join the waiting list
+                    </h1>
+                    <Form />
+                  </div>
                 </Dialog.Panel>
               </div>
             </Dialog>
