@@ -1,7 +1,7 @@
 import ThankYouPageHero from "../../components/pages/ThankYouPageHero";
 import Layout from "../../components/shared/Layout";
 
-const NifPage = () => {
+const ThankYouPage = () => {
   return (
     <Layout>
       <div className="grid gap-52">
@@ -11,4 +11,4 @@ const NifPage = () => {
   );
 };
 
-export default NifPage;
+export default ThankYouPage;

@@ -1,7 +1,10 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import Form from "./Form";
 
 const Footer = () => {
+  const router = useRouter();
+
   return (
     <div className="bg-gray-100 h-full">
       <div className="px-8 pt-20 mt-52 pb-20 max-w-6xl mx-auto">
@@ -22,12 +25,14 @@ const Footer = () => {
               mortgage with social impact!
             </p>
           </div>
-          <div className="grow">
-            <h2 className="text-xl sm:text-2xl font-bold mb-5 ">
-              Join our ✉️ newsletter
-            </h2>
-            <Form />
-          </div>
+          {router.pathname != "/thank-you" && (
+            <div className="grow">
+              <h2 className="text-xl sm:text-2xl font-bold mb-5 ">
+                Join our ✉️ newsletter
+              </h2>
+              <Form />
+            </div>
+          )}
         </div>
       </div>
     </div>
